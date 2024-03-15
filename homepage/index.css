@@ -1,0 +1,896 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Homepage */
+.main-homepage{
+    height: 100%;
+    width: 100%;
+}
+
+/* Header */
+.main-homepage .header{
+    height: 120px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    /* Style */
+    display: flex;
+    align-items: center;
+}
+
+.main-homepage .nav{
+height: 120px;
+width: 100%;
+z-index: 10px;
+    /* Style */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.main-homepage .nav span{    
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+    }
+
+.main-homepage .nav .menu-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-homepage .nav .menu-container li{
+     list-style: none;
+     text-decoration: none;
+         
+}
+
+.main-homepage .nav .menu-container li #myBtn{
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.main-homepage .nav .menu-container li #myBtnRegister{
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.main-homepage .nav .menu-container li #myBtnLogin{
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.main-homepage .nav .menu-container li a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.main-homepage .nav .menu-container li a:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage .nav .menu-container li #myBtn:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage .nav .menu-container li #myBtnRegister:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage .nav .menu-container li #myBtnLogin:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage .nav .burger-nav{
+    visibility: hidden;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-homepage .nav  .burger-nav span{
+    display: block;
+    background-color: aliceblue;
+    width: 30px;
+    height: 2px;
+}
+
+/* End */
+
+/* Body */
+.main-homepage .body{
+    height: 100%;
+    width: 100%;
+}
+
+.main-homepage .body .contact{
+height: 45.5rem;
+width: 100%;
+
+/* Flex */
+display: flex;
+justify-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by defa.menu-containert */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* F.menu-containerl width */
+    height: 100%; /* F.menu-containerl height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 50px auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 32%; /* Co.menu-containerd be more or less, depending on screen size */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+  } 
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.main-homepage .body .contact   .modal-content form{
+    height: 100%;
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-homepage .body .contact   .modal-content form input{
+    height: 40px;
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.main-homepage .body .contact   .modal-content form textarea{
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    cursor: pointer;
+    resize: none;
+    outline: none;
+
+}
+
+.main-homepage .body .contact form #submit{
+    background-color: red;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage .body .contact form #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage  .contact form #submit{
+    background-color: red;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage .body .contact form #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* End Contact Modal */
+
+/* Register Modal */
+
+
+/* The Modal (background) */
+.register_modal {
+    display: none; /* Hidden by defa.menu-containert */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* F.menu-containerl width */
+    height: 100%; /* F.menu-containerl height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-register {
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 70px auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 65%; /* Co.menu-containerd be more or less, depending on screen size */
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* The Close Button */
+  .close-register {
+    color: #aaa;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+  } 
+  
+  .close-register:hover,
+  .close-register:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close-register:hover,
+  .close-register:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.main-homepage .modal-content-register .form-register{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* Flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-homepage .modal-content-register h1{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-homepage   .modal-content-register .form-register  input{
+    height: 40px;
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    cursor: pointer;
+    outline: none;
+    flex: 1;
+
+}
+
+.main-homepage   .modal-content-register .form-register  select{
+    color: #888;
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    cursor: pointer;
+    outline: none;
+    flex: 1;
+}
+
+
+.main-homepage   .modal-content-register .form-register .address{
+    width: 100%;
+}
+
+.main-homepage   .modal-content-register .form-register .address input{
+    width: 100%;
+}
+
+
+.main-homepage  .form-register .submit{
+    width: 100%;
+
+}
+
+
+.main-homepage   .form-register #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage  .form-register #submit{
+    background-color: red;
+    color: aliceblue;
+    padding: 0;
+    margin: 0 250px;
+    width: 350px;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage   .form-register #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* End Modal Register */
+
+
+/* Login Modal */
+
+
+/* The Modal (background) */
+.login_modal {
+    display: none; /* Hidden by defa.menu-containert */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* F.menu-containerl width */
+    height: 100%; /* F.menu-containerl height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-login {
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 200px auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 32%; /* Co.menu-containerd be more or less, depending on screen size */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* The Close Button */
+  .close-login {
+    color: #aaa;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    height: 25px;
+  } 
+  
+  .close-login:hover,
+  .close-login:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close-login:hover,
+  .close-login:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.main-homepage .modal-content-login .form-login{
+    height: 100%;
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-homepage   .modal-content-login .form-login  input{
+    height: 40px;
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-homepage  .form-login #submit{
+    background-color: red;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage   .form-login #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-homepage  .form-login #submit{
+    background-color: red;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    /* Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage  .form-login #submit:hover{
+    background-color: aliceblue;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* End Modal Login */
+
+.main-homepage .body .contact .slide-show{
+    width: 100%;
+    z-index: -1;
+}
+
+.main-homepage .body .contact .slide-show img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+
+.main-homepage .body .gallery{
+    height: 100%;
+    width: 100%;
+    padding: 40px 20px;
+    /* Style */
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+
+.main-homepage .body .gallery >div{
+   border: 1px solid red;
+   height: 250px;
+   width: 350px;
+}
+
+
+.main-homepage .body .gallery img{
+    height: 100%;
+    width: 100%;
+}
+
+.main-homepage .body .services{
+    height: 100%;
+    width: 100%;
+    padding: 20px 40px;
+   /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-homepage .body .services span{
+ color: red;
+ font-weight: bold;
+ font-size: 2rem;
+}
+
+.main-homepage .body .services .serve{
+    /* flex */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+.main-homepage .body .services .serve >div{
+    height: 300px;
+    width: 300px;
+    border: 1px solid red;
+}
+
+
+
+/* Footer */
+.main-homepage .footer{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-homepage .footer .top{
+    height: 100px;
+    width: 100%;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-homepage .footer .top >div{
+    width: 80px;
+    height: 100%;
+    color: white;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+
+.main-homepage .footer .top ul li a{
+    color: white;
+    text-decoration: none; 
+}
+
+.main-homepage .footer .top ul li a:hover{
+ color: black;
+ transition: 0.5s;
+}
+
+
+.main-homepage .footer .bottom{
+    height: 90px;
+    width: 100%;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+}
+
+.main-homepage .footer .bottom .icons{
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.main-homepage .footer .bottom .icons .fa{
+    font-size: 20px;
+}
+
+.main-homepage .footer .bottom .company-name{
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-homepage .footer .bottom .reserved{
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* End */
+
+
+/* Media queries */
+
+/* Large Devices */
+
+@media (max-width:992px) and (min-width: 767px){
+
+}
+
+/* Medium Devices */
+
+@media (max-width: 768px) and (min-width: 576px){
+
+}
+
+/* Small devices */
+
+@media (max-width: 568px){
+    /* Header */
+
+.main-homepage .nav span {
+    font-size: 2rem;
+}
+
+.main-homepage .nav .menu-container {
+    background-color: red;
+     transform: scale(1, 0);
+     transform-origin: top;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: 80%;
+    /* flex */
+    display: flex;
+    gap: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-homepage .nav .menu-container.show {
+    border-top: 1px solid white;
+     transform: scale(1, 1);
+     transition: transform 500ms ease;
+}
+
+.no-scroll {
+    overflow: hidden;
+  }
+  
+
+.main-homepage .nav .burger-nav {
+    visibility: unset;
+}
+
+.main-homepage .nav .menu-container li {
+    list-style: none;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.main-homepage .nav .menu-container li #myBtn{
+  font-size: 25px;
+  font-family: fantasy;
+  height: 100%;
+  width: 100%;
+}
+
+.main-homepage .nav .menu-container li #myBtn:hover{
+    background-color: white;
+    color: red;
+}
+
+
+.main-homepage .nav .menu-container li a{
+    font-size: 25px;
+    font-family: fantasy;
+    height: 100%;
+    width: 100%;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-homepage .nav .menu-container li a:hover{
+      background-color: white;
+      color: red;
+  }
+
+  
+.main-homepage .nav .menu-container li #myBtnRegister{
+    font-size: 25px;
+    font-family: fantasy;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main-homepage .nav .menu-container li #myBtnRegister:hover{
+      background-color: white;
+      color: red;
+  }
+
+   
+.main-homepage .nav .menu-container li #myBtnLogin{
+    font-size: 25px;
+    font-family: fantasy;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main-homepage .nav .menu-container li #myBtnLogin:hover{
+      background-color: white;
+      color: red;
+  } 
+
+  /* Header End */
+
+/* Body */
+
+.modal-content {
+    width: 95%;
+}
+
+.main-homepage .body .contact .modal-content form input {
+    width: 315px;
+    margin-left: -15px;
+}
+
+
+.main-homepage .body .contact .modal-content form textarea {
+    width: 315px;
+    margin-left: -15px;
+}
+
+.main-homepage .body .contact form #submit{
+    margin-left: -15px;
+}
+
+/* Contact */
+.main-homepage .body .contact{
+    height: 100%;
+}
+
+.main-homepage .body .contact .slide-show img{
+    width: 100%;
+    height: 350px;
+    background-position: center;
+}
+
+/* Services */
+
+
+/* Footer */
+
+.main-homepage .footer .top ul li a{
+   font-size: 14px;
+}
+
+.main-homepage .footer .bottom .icons .fa{
+    font-size: 18px;
+}
+
+.main-homepage .footer .bottom .company-name{
+    padding:0px 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.main-homepage .footer .bottom .reserved{
+font-size: 14px;
+}
+
+
+
+/* Register Modal */
+
+.register_modal {
+    overflow: auto;
+}
+
+.modal-content-register {
+    margin: 40px auto; 
+    width: 80%;
+  }
+
+  .main-homepage  .form-register .submit{
+    display: flex;
+}
+
+    .main-homepage  .form-register #submit{
+        margin: 0px 0px;
+    }
+
+/* Login Modal */
+
+.modal-content-login {
+width: 80%;
+margin: 150px auto;
+}
+
+.main-homepage   .modal-content-login .form-login  input{
+    width: 100%;
+}
+
+}
+
+
+/* End */
